@@ -1,0 +1,25 @@
+{
+  "name": "h-html",
+  "version": "1.0.0",
+  "description": "A library to quickly create virtual nodes for Composi using HTML tag names instead of Composi's h function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/composor/h-html.git"
+  },
+  "keywords": [
+    "composi",
+    "h",
+    "hyperscipt",
+    "jsx"
+  ],
+  "author": "Robert Biggs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/composor/h-html/issues"
+  },
+  "homepage": "https://github.com/composor/h-html#readme"
+}
