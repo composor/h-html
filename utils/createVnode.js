@@ -1,7 +1,7 @@
-import { h } from "composi"
+import {h} from "./h"
 
 export const createVnode = tag => (props, children) => {
-  return typeof props === "object" && !Array.isArray(props)
+  return undefined !== props && !props.apply && !Array.isArray(props)
     ? h(tag, props, children)
     : h(tag, {}, props)
 }
