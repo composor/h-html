@@ -61,16 +61,19 @@ function title(message) {
   )
 }
 
-function list() {
+// Define list:
+function list(data) {
+  // Define list Item:
+  function listItems(data) {
+    return data.map(item => tag.li({}, `Item ${item}`))
+  }
   return tag.ul(
     {class: 'list'},
-    [
-      tag.li({}, 'Item One'),
-      tag.li({}, 'Item Two'),
-      tag.li({}, 'Item Three')
-    ]
+    listItems(data)
   )
 }
+// Render list:
+render(list(['One', 'Two', 'Three']), 'article')
 ```
 
 Use with Composi
